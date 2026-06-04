@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy 500 Days ❤️</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Pretendard:wght@300;400;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Pretendard',sans-serif;
+    background:linear-gradient(to bottom,#fff5f7,#fff);
+    color:#444;
+    overflow-x:hidden;
+}
+
+section{
+    min-height:100vh;
+    padding:60px 20px;
+}
+
+.hero{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero img{
+    width:280px;
+    height:380px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.hero h1{
+    margin-top:30px;
+    font-size:3rem;
+    color:#ff6b9d;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:1.1rem;
+}
+
+.counter{
+    font-size:2rem;
+    font-weight:600;
+    margin-top:20px;
+}
+
+.timeline{
+    max-width:900px;
+    margin:auto;
+}
+
+.timeline-title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:50px;
+    color:#ff6b9d;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:30px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.card h3{
+    color:#ff6b9d;
+    margin-bottom:10px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.gallery img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+.letter{
+    max-width:800px;
+    margin:auto;
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    line-height:1.9;
+}
+
+.footer{
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.footer h2{
+    color:#ff6b9d;
+    font-size:3rem;
+}
+
+.heart{
+    position:fixed;
+    color:#ff7aa5;
+    animation:float 10s linear infinite;
+    opacity:.4;
+    pointer-events:none;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(100vh);
+    }
+    to{
+        transform:translateY(-100px);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+    <img src="main.jpg" alt="">
+    <h1>Happy 500 Days ❤️</h1>
+    <p>2025.01.21 ~ 2026.06.04</p>
+    <div class="counter" id="days">500 Days</div>
+</section>
+
+<section>
+    <div class="timeline">
+        <h2 class="timeline-title">우리의 이야기</h2>
+
+        <div class="card">
+            <h3>🌸 첫 만남</h3>
+            <p>처음 만났던 날. 아직도 생생하게 기억나는 순간.</p>
+        </div>
+
+        <div class="card">
+            <h3>☕ 첫 데이트</h3>
+            <p>어색했지만 누구보다 설레었던 하루.</p>
+        </div>
+
+        <div class="card">
+            <h3>✈️ 첫 여행</h3>
+            <p>함께 떠난 첫 여행, 더 가까워진 시간.</p>
+        </div>
+
+        <div class="card">
+            <h3>🎉 100일</h3>
+            <p>벌써 100일이라며 놀랐던 날.</p>
+        </div>
+
+        <div class="card">
+            <h3>❤️ 500일</h3>
+            <p>그리고 오늘. 우리의 500번째 하루.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 class="timeline-title">추억 갤러리</h2>
+
+    <div class="gallery">
+        <img src="photo1.jpg">
+        <img src="photo2.jpg">
+        <img src="photo3.jpg">
+        <img src="photo4.jpg">
+    </div>
+</section>
+
+<section>
+    <h2 class="timeline-title">To. 사랑하는 사람에게</h2>
+
+    <div class="letter">
+        함께한 500일 동안 행복한 순간도,
+        힘들었던 순간도 있었지만
+        언제나 곁에 있어줘서 고마워.
+
+        앞으로의 500일,
+        그리고 그 이후의 시간들도
+        지금처럼 함께 걸어가고 싶어.
+
+        ❤️
+    </div>
+</section>
+
+<section class="footer">
+    <h2>Happy 500 Days</h2>
+    <p style="margin-top:20px;">2026.06.04</p>
+    <p style="margin-top:10px;">앞으로도 잘 부탁해 ❤️</p>
+</section>
+
+<script>
+const startDate = new Date("2025-01-21");
+const today = new Date("2026-06-04");
+
+const diff =
+Math.floor((today-startDate)/(1000*60*60*24));
+
+document.getElementById("days").innerHTML =
+`${diff} Days Together ❤️`;
+
+for(let i=0;i<30;i++){
+    const heart=document.createElement("div");
+    heart.className="heart";
+    heart.innerHTML="❤";
+    heart.style.left=Math.random()*100+"vw";
+    heart.style.fontSize=(Math.random()*20+15)+"px";
+    heart.style.animationDuration=(Math.random()*8+6)+"s";
+    document.body.appendChild(heart);
+}
+</script>
+
+</body>
+</html>

@@ -30,4 +30,5 @@
 ├── 📄 index.html      # 웹페이지의 뼈대와 디데이/기념일 데이터
 ├── 📄 style.css       # 3D 뒤집기 효과, 하트 애니메이션 및 전체 스타일링
 ├── 📄 script.js       # 디데이 계산, 서랍 열기 및 스크롤 감지 로직
-└── 📁 images/         # 우리들의 추억 사진 및 동영상 자산 (Local Only)
+├── 📁 images/         # 우리들의 추억 사진 폴더 (Local Only)
+└── 📁 videos/         # 우리들의 추억 동영상 폴더 (Local Only)

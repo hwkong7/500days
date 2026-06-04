@@ -1,239 +1,260 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy 500 Days ❤️</title>
-
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Pretendard:wght@300;400;600&display=swap');
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:'Pretendard',sans-serif;
-    background:linear-gradient(to bottom,#fff5f7,#fff);
-    color:#444;
-    overflow-x:hidden;
-}
-
-section{
-    min-height:100vh;
-    padding:60px 20px;
-}
-
-.hero{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-}
-
-.hero img{
-    width:280px;
-    height:380px;
-    object-fit:cover;
-    border-radius:20px;
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
-}
-
-.hero h1{
-    margin-top:30px;
-    font-size:3rem;
-    color:#ff6b9d;
-}
-
-.hero p{
-    margin-top:15px;
-    font-size:1.1rem;
-}
-
-.counter{
-    font-size:2rem;
-    font-weight:600;
-    margin-top:20px;
-}
-
-.timeline{
-    max-width:900px;
-    margin:auto;
-}
-
-.timeline-title{
-    text-align:center;
-    font-size:2.5rem;
-    margin-bottom:50px;
-    color:#ff6b9d;
-}
-
-.card{
-    background:white;
-    border-radius:20px;
-    padding:25px;
-    margin-bottom:30px;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-}
-
-.card h3{
-    color:#ff6b9d;
-    margin-bottom:10px;
-}
-
-.gallery{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-    max-width:1000px;
-    margin:auto;
-}
-
-.gallery img{
-    width:100%;
-    height:320px;
-    object-fit:cover;
-    border-radius:20px;
-}
-
-.letter{
-    max-width:800px;
-    margin:auto;
-    background:white;
-    padding:40px;
-    border-radius:25px;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-    line-height:1.9;
-}
-
-.footer{
-    text-align:center;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-}
-
-.footer h2{
-    color:#ff6b9d;
-    font-size:3rem;
-}
-
-.heart{
-    position:fixed;
-    color:#ff7aa5;
-    animation:float 10s linear infinite;
-    opacity:.4;
-    pointer-events:none;
-}
-
-@keyframes float{
-    from{
-        transform:translateY(100vh);
-    }
-    to{
-        transform:translateY(-100px);
-    }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500-day Anniversary</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<section class="hero">
-    <img src="main.jpg" alt="">
-    <h1>Happy 500 Days ❤️</h1>
-    <p>2025.01.21 ~ 2026.06.04</p>
-    <div class="counter" id="days">500 Days</div>
-</section>
+    <section class="hero">
+        <img src="images/main.png" alt="메인 사진">
+        <h1>❤️ 500-day Anniversary ❤️</h1>
+        <p>2025.01.21 ~ 2026.06.04</p>
+        <div class="counter" id="days">500 Days</div>
+    </section>
 
-<section>
-    <div class="timeline">
-        <h2 class="timeline-title">우리의 이야기</h2>
+    <section>
+        <div class="timeline">
+            <h2 class="timeline-title">우리의 첫 이야기</h2>
 
-        <div class="card">
-            <h3>🌸 첫 만남</h3>
-            <p>처음 만났던 날. 아직도 생생하게 기억나는 순간.</p>
+            <div class="card">
+                <h3>🌸 첫 만남</h3>
+                <p>처음 만났던 날. 아직도 생생하게 기억나는 순간.</p>
+                <div class="drawer">
+                    <div class="drawer-item">
+                        <video src="videos/firstmeet_video.mp4" controls autoplay loop muted playsinline></video>
+                        <p class="photo-desc">우리 처음 만났던 날 🍻</p>
+                    </div>
+                    <div class="drawer-item">
+                        <video src="videos/firstmeet_video2.mp4" controls autoplay loop muted playsinline></video>
+                        <p class="photo-desc">안재현 내 옆자리에 있네?</p>
+                    </div>
+                    <div class="drawer-item">
+                        <img src="images/meet3.jpg" alt="첫 만남 사진 2">
+                        <p class="photo-desc">안재현이랑 처음 같이 한 mz샷📸</p>
+                    </div>
+                    <div class="drawer-item">
+                        <img src="images/meet2.jpg" alt="첫 만남 사진 2">
+                        <p class="photo-desc">안재현 개취해있는데?ㅋㅋㅋ 이때부터 내가 예쁘다고 생각했을까?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>🍝 첫 데이트</h3>
+                <p>어색했지만 누구보다 설레었던 하루.</p>
+                <div class="drawer">
+                    <div class="drawer-item">
+                        <img src="images/date1.webp" alt="첫 데이트 사진">
+                        <p class="photo-desc">혀나랑 처음 데이트 + 혀나가 필라프 다먹음</p>
+                    </div>
+                    <div class="drawer-item">
+                        <img src="images/date2.jpg" alt="첫 데이트 사진">
+                        <p class="photo-desc">이거 어디까지 올라가는 거예요??</p>
+                    </div>
+                    <div class="drawer-item">
+                        <img src="images/date3.jpg" alt="첫 데이트 사진">
+                        <p class="photo-desc">첫 데이트 기념 인생네컷</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>🎁 서로에게 첫 생일 선물</h3>
+                <p>다시 보니 엄청 웃긴 그날들. 심지어 14일차.</p>
+                <div class="drawer">
+                    <div class="drawer-item">
+                        <img src="images/birthday1.jpg" alt="첫 생일 사진">
+                        <p class="photo-desc">혀나가 나에게 준 선물 (0909) 🎁</p>
+                    </div>
+                    <div class="drawer-item">
+                        <img src="images/birthday2.jpg" alt="첫 생일 사진">
+                        <p class="photo-desc">내가 혀나에게 준 선물 (0923) 🎁</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>❤️ 500일</h3>
+                <p>그리고 오늘. 우리의 500번째 하루.</p>
+                <div class="drawer">
+                    <div class="drawer-item">
+                        <img src="images/day500.png" alt="500일 사진">
+                        <p class="photo-desc">500일 동안 한결같이 사랑해줘서 고마워 ❤️</p>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="card">
-            <h3>☕ 첫 데이트</h3>
-            <p>어색했지만 누구보다 설레었던 하루.</p>
+    <section>
+        <h2 class="timeline-title">추억 갤러리(눌러서 뒤집기)</h2>
+        <div class="gallery">
+            
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/photo1.jpg" alt="갤러리1">
+                    </div>
+                    <div class="flip-card-back">
+                        <p>피그민 두마리 ㅋㅋㅋ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/photo2.jpg" alt="갤러리2">
+                    </div>
+                    <div class="flip-card-back">
+                        <p>여보는 귀엽고 나는 섹시하고</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/photo3.jpg" alt="갤러리3">
+                    </div>
+                    <div class="flip-card-back">
+                        <p>여보가 추천했던 홍성 맛집(돈까스&라멘)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/photo4.jpg" alt="갤러리4">
+                    </div>
+                    <div class="flip-card-back">
+                        <p>레전드 그날) 홍성->구미 2번 환승
+                            얼마나 구미를 가고 싶은건지 감도 안옴
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/photo5.jpg" alt="갤러리5">
+                    </div>
+                    <div class="flip-card-back">
+                        <p>500일을 축하해주는 말차라뗴☕💚</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/photo6.jpg" alt="갤러리6">
+                    </div>
+                    <div class="flip-card-back">
+                        <p>여보와 함께 처음찍은 하트 손사진</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/photo7.jpg" alt="갤러리7">
+                    </div>
+                    <div class="flip-card-back">
+                        <p>천안 테라스에서)
+                            여보 너무 귀여워
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/photo8.jpg" alt="갤러리8">
+                    </div>
+                    <div class="flip-card-back">
+                        <p>레전드 그날2) 신혜원 교보문고에서 개삐져서 도망간 날 |
+                            하지만 애슐리는 맛있었죵?
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/photo9.jpg" alt="갤러리9">
+                    </div>
+                    <div class="flip-card-back">
+                        <p>여보랑 천안 돌아가는 길에 먹었던 냉삼집.. 비쌌지만 맛있었따..</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/photo10.jpg" alt="갤러리10">
+                    </div>
+                    <div class="flip-card-back">
+                        <p>이월드에서 여보랑 귀여운 짓하기</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/photo11.jpg" alt="갤러리11">
+                    </div>
+                    <div class="flip-card-back">
+                        <p>여보랑 같이 회전목마🎠 앞에서📸</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/photo12.jpg" alt="갤러리12">
+                    </div>
+                    <div class="flip-card-back">
+                        <p>여보 군대에서 내 편지보고 기운냈으면 좋겠어서 열심히 작성한 편지들</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
+    </section>
 
-        <div class="card">
-            <h3>✈️ 첫 여행</h3>
-            <p>함께 떠난 첫 여행, 더 가까워진 시간.</p>
+    <section>
+        <h2 class="timeline-title">To. 재현이에게</h2>
+        <div class="letter">
+            함께한 500일 동안 행복한 순간도,
+            힘들었던 순간도 있었지만
+            언제나 곁에 있어줘서 고마워.
+
+            앞으로의 500일,
+            그리고 그 이후의 시간들도
+            지금처럼 함께 걸어가고 싶어.
+
+            사랑해 ❤️
         </div>
+    </section>
 
-        <div class="card">
-            <h3>🎉 100일</h3>
-            <p>벌써 100일이라며 놀랐던 날.</p>
-        </div>
+    <section class="footer">
+        <h2>Happy 500 Days</h2>
+        <p style="margin-top:20px;">2026.06.04</p>
+        <p style="margin-top:10px;">앞으로도 잘 부탁해 ❤️</p>
+    </section>
 
-        <div class="card">
-            <h3>❤️ 500일</h3>
-            <p>그리고 오늘. 우리의 500번째 하루.</p>
-        </div>
-    </div>
-</section>
-
-<section>
-    <h2 class="timeline-title">추억 갤러리</h2>
-
-    <div class="gallery">
-        <img src="photo1.jpg">
-        <img src="photo2.jpg">
-        <img src="photo3.jpg">
-        <img src="photo4.jpg">
-    </div>
-</section>
-
-<section>
-    <h2 class="timeline-title">To. 사랑하는 사람에게</h2>
-
-    <div class="letter">
-        함께한 500일 동안 행복한 순간도,
-        힘들었던 순간도 있었지만
-        언제나 곁에 있어줘서 고마워.
-
-        앞으로의 500일,
-        그리고 그 이후의 시간들도
-        지금처럼 함께 걸어가고 싶어.
-
-        ❤️
-    </div>
-</section>
-
-<section class="footer">
-    <h2>Happy 500 Days</h2>
-    <p style="margin-top:20px;">2026.06.04</p>
-    <p style="margin-top:10px;">앞으로도 잘 부탁해 ❤️</p>
-</section>
-
-<script>
-const startDate = new Date("2025-01-21");
-const today = new Date("2026-06-04");
-
-const diff =
-Math.floor((today-startDate)/(1000*60*60*24));
-
-document.getElementById("days").innerHTML =
-`${diff} Days Together ❤️`;
-
-for(let i=0;i<30;i++){
-    const heart=document.createElement("div");
-    heart.className="heart";
-    heart.innerHTML="❤";
-    heart.style.left=Math.random()*100+"vw";
-    heart.style.fontSize=(Math.random()*20+15)+"px";
-    heart.style.animationDuration=(Math.random()*8+6)+"s";
-    document.body.appendChild(heart);
-}
-</script>
-
+    <script src="script.js"></script>
 </body>
 </html>
